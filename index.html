@@ -2,14 +2,20 @@
 <html lang="en">
     <head><title>the hangman</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./styles/hangman.css">
+        
     </head>
 
     <body>
-        <p>Find the hidden word. Press the key of a letter.</p>
+        <p class="message">Find the hidden word.</p>
+        <p class="message">Press the key of a letter or use the mouse on the virtual keyboard.</p>
         <p id="attempt"></p>
         <p id="hiddenWord"></p>
         <p id="faultLetters"></p>
-        <canvas id="canvas" tabindex=0 width="600" height="400" style="border:1px solid #1b1a1a;">
+        <div id="container">
+        </div>
+        <p></p>
+        <canvas id="canvas" tabindex=0 width="400" height="200" style="border:1px solid #1b1a1a;">
         <script src="./hangman.js"></script>
     </body>
 
